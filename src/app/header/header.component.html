@@ -1,0 +1,162 @@
+<!-- Preloader -->
+<div class="spinner-wrapper">
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</div>
+<!-- end of preloader -->
+
+
+
+<!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top ">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
+    
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="../assets/images/logo.png" alt="alternative"></a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+    
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                                <!-- Dropdown Menu -->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Question socrai</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"><span class="item-text">DropDown 2</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="#"><span class="item-text">DropDown 1</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#" routerLinkActivate="activate" >Covid-19</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" (click)="ToContact()" routerLink="contact" routerLinkActivate="active">Contact us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle page-scroll login_drpdwn" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Login/signup</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#signup" data-toggle="modal" data-target="#log-signUp"><span class="item-text">Signup</span></a>
+                    <div class="dropdown-items-divide-hr"></div>
+                    <a class="dropdown-item" href="#signin" data-toggle="modal" data-target="#log-signIn"><span class="item-text">Login</span></a>
+                    <a class="dropdown-item" href="#signin" data-toggle="modal" data-target="#chatbox"><span class="item-text">chatbot</span></a>
+
+                  </div>
+              </li>
+                
+            </ul>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+    
+
+<!-- Modal -->
+
+
+
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="log-signUp" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+  
+
+            <div class=" active tab-style login-shadow " style="width: 100%; margin-top: 1.13rem;    padding: 1rem;"><a href="#signin"   ><b>Sign up</b></a></div>
+                <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)" style="margin-top: 2.13rem;" >
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" formControlName="name" class="form-control"  />
+                        
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" formControlName="email" class="form-control" />
+                       
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" formControlName="password" class="form-control"  />
+                        
+                        </div>
+                    
+                    <div class="form-group">
+                        <label>Confirm Password</label>
+                        <input type="password" formControlName="c_password" class="form-control"  />
+                        
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" >Sign up</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="chatbox" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+    
+    
+            <div class=" active tab-style login-shadow " style="width: 100%; margin-top: 1.13rem;    padding: 1rem;"><a href="#signin"   ><b>Sign in</b></a></div>
+                    <form [formGroup]="myForm" (ngSubmit)="sendmsg(myForm.value)" style="margin-top: 2.13rem;" >
+                    
+                    <div class="form-group">
+                        <label>ask question</label>
+                        <input type="text" formControlName="msg" class="form-control" />
+                        <button class="btn btn-primary">Send</button>
+                     
+                    </div>
+        
+                     
+                </form>
+            </div>
+            </div>
+    </div>
+    </div>
+    
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="log-signIn" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-body">
+
+
+        <div class=" active tab-style login-shadow " style="width: 100%; margin-top: 1.13rem;    padding: 1rem;"><a href="#signin"   ><b>Sign in</b></a></div>
+                <form [formGroup]="myForm" (ngSubmit)="onLogin(myForm.value)" style="margin-top: 2.13rem;" >
+                
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" formControlName="email" class="form-control" />
+                   
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" formControlName="password" class="form-control"  />
+                    
+                    </div>
+                
+                <div class="form-group">
+                    <button class="btn btn-primary">Sign in</button>
+                </div>
+            </form>
+        </div>
+        </div>
+</div>
+</div>

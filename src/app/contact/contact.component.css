@@ -1,0 +1,27 @@
+.contact_us {
+	margin-bottom: 3rem;
+}
+.contact_us label {
+	font-weight: 700;
+}
+.contact_us input , .contact_us textarea {
+    background: #f5f5f5;
+    border: 1px solid #f5f5f5;
+}
+.contact_us input:focus , .contact_us textarea:focus {
+    background: #fff;
+    border: 1px solid #f5f5f5;
+}
+.cntct_btn button {
+	width: 100%;
+    padding: 10px;
+    background: #2a8bf2;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+}
+.cntct_btn button:hover {
+	background: linear-gradient(74deg, #2a8bf2,  #2eb24c);
+    background-size: 400% 400%;
+	animation: btnanimation 2s ease infinite;
+}

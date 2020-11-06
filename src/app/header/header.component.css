@@ -1,0 +1,431 @@
+/*************************/
+/*     02. Preloader     */
+/*************************/
+.spinner-wrapper {
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+}
+
+.spinner {
+	position: absolute;
+	top: 50%; /* centers the loading animation vertically one the screen */
+	left: 50%; /* centers the loading animation horizontally one the screen */
+	width: 3.75rem;
+	height: 1.25rem;
+	margin: -0.625rem 0 0 -1.875rem; /* is width and height divided by two */ 
+	text-align: center;
+}
+
+.spinner > div {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background-color: #00bfd8;
+	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+	0%, 80%, 100% { -webkit-transform: scale(0); }
+	40% { -webkit-transform: scale(1.0); }
+}
+
+@keyframes sk-bouncedelay {
+	0%, 80%, 100% { 
+		-webkit-transform: scale(0);
+		-ms-transform: scale(0);
+		transform: scale(0);
+	} 40% { 
+		-webkit-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+}
+
+                                /**************************/
+                                /*     03. Navigation     */
+                                /**************************/
+                                
+.navbar-custom{
+background-image: url('/assets/images/nav.png') !important;
+background-size: cover !important; 	
+padding: 2.125rem 10rem 12.5rem 11rem;
+}
+								
+
+.navbar-custom {
+
+	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+	font: 600 0.875rem/0.875rem "Lato", sans-serif;
+	transition: all 0.2s;
+}
+
+.navbar-custom .navbar-brand.logo-image img {
+    width: 10.4375rem;
+	/*height: 2rem;z*/
+}
+
+.navbar-custom .navbar-brand.logo-text {
+	font: 600 2rem/1.5rem "Lato", sans-serif;
+	color: #000;
+	text-decoration: none;
+}
+
+.navbar-custom .navbar-nav {
+	margin-top: 0.75rem;
+	margin-bottom: 0.5rem;
+}
+
+.navbar-custom .nav-item .nav-link {
+	padding: 1.125rem 4rem 0.125rem 0rem;
+	color: #fff !important;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+.navbar-custom .nav-item .nav-link:hover,
+.navbar-custom .nav-item .nav-link.active {
+	color: #00bfd8;
+}
+
+
+/* Dropdown Menu */
+.navbar-custom .dropdown:hover > .dropdown-menu {
+	display: block; /* this makes the dropdown menu stay open while hovering it */
+	min-width: auto;
+	animation: fadeDropdown 0.2s; /* required for the fade animation */
+}
+
+@keyframes fadeDropdown {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar-custom .dropdown-toggle:focus { /* removes dropdown outline on focus */
+	outline: 0;
+}
+.navbar-custom .dropdown-menu {
+	margin-top: 0;
+	border: none;
+	border-radius: 0.25rem;
+	background-color: #fff;
+}
+
+.navbar-custom .dropdown-item {
+	color: #393939;
+	text-decoration: none;
+}
+
+.navbar-custom .dropdown-item:hover {
+	background-color: #fff;
+}
+
+.navbar-custom .dropdown-item .item-text {
+	font: 600 0.875rem/0.875rem "Lato", sans-serif;
+}
+
+.navbar-custom .dropdown-item:hover .item-text {
+	color: #00bfd8;
+}
+
+.navbar-custom .dropdown-items-divide-hr {
+	width: 100%;
+	height: 1px;
+	margin: 0.75rem auto 0.725rem auto;
+	border: none;
+	background-color: #c4d8dc;
+	opacity: 0.2;
+}
+/* end of dropdown menu */
+
+	/*       Work Started on header       */
+
+	.single {
+		margin-top: -8px;
+	}
+	.single input {
+		background: transparent;
+		color: #fff;
+		border: 1px solid #fff;
+		transition: .5s;
+	}
+	.single input:focus {
+		background: transparent;
+		color: #fff;
+	}
+	.single input::placeholder {
+		color: #fff;
+		font-weight: 500;
+	}
+	.single button {
+		background: #000;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		border: 1px solid #fff;
+		border-left: 0;
+		color: #fff !important;
+		padding: 6px 30px;
+	}
+	.login_drpdwn {
+		margin-right: 15px;
+	}
+	.text-container h5 {
+		font-weight: 500;
+		font-size: 28px;
+	}
+	.text-container p {
+		font-size: 24px;
+		text-transform: capitalize;
+		color: #000;
+		font-weight: 400;
+		margin-bottom: 1.5rem;
+	}
+	.text-container a {
+		border-radius: 4px;
+		background: #2eb24c;
+		padding: 13px 40px;
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: .5s;
+	}
+	
+	.text-container a:hover {
+		background: linear-gradient(74deg, #2eb24c, #2a8bf2);
+		background-size: 400% 400%;
+		animation: btnanimation 2s ease infinite;
+	}
+	
+	@keyframes btnanimation {
+		0%{background-position:0% 83%}
+		50%{background-position:100% 18%}
+		100%{background-position:0% 83%}
+	}
+	
+			/*     end header     */
+	
+
+/*************************/
+/*    Login/Signup Modals     */
+/*************************/
+
+.tab-style{
+	font-size:20px;
+	width:50%;
+	background-color:#f2f2f2;
+  	text-align:center;
+}
+
+.tab-style a {
+	display: block;
+	padding: 20px;
+}
+
+.nav-tabs > li > a {
+    margin-right: 0px;
+    /*color:grey;*/
+}
+
+.group2 { 
+	position: relative; 
+	margin-top: 16px; 
+}
+
+.btn-block{
+	margin-top:20px;
+	margin-bottom:20px;
+	font-size:18px;
+}
+
+.login-shadow {
+	-webkit-box-shadow: 5px -5px 6px 0px rgba(82,82,82,0.52);
+	-moz-box-shadow: 5px -5px 6px 0px rgba(82,82,82,0.52);
+	box-shadow: 5px -5px 6px 0px rgba(82,82,82,0.52);
+  	z-index:1;
+    background: #5791de;
+}
+
+.login-shadow a {
+	color: #fff;
+}
+
+.signup-shadow {
+	-webkit-box-shadow: -5px 0px 6px 0px rgba(82,82,82,0.52);
+	-moz-box-shadow: -5px -5px 6px 0px rgba(82,82,82,0.52);
+	box-shadow: -5px 0px 6px 0px rgba(82,82,82,0.52);
+  	background: #5791de;
+}
+
+.signup-shadow a {
+	color: #fff;
+}
+
+.modal-header{
+	background-color:#e5ecf4;
+}
+
+.group { 
+	position: relative; 
+	margin-top: 30px; 
+}
+
+.input {
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	-webkit-appearance: none;
+	display: block;
+	background: none;
+	color: #636363;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #757575;
+}
+
+.input:focus { 
+	outline: none; 
+}
+
+
+/* Label */
+
+.label {
+	color: #757575; 
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: -10px;
+	top: 10px;
+	transition: all 0.2s ease;
+}
+
+
+/* active */
+
+.input:focus ~ .label, .input.used ~ .label {
+	top: -20px;
+  transform: scale(.75); left:-15px;
+	/* font-size: 14px; */
+	color: #4a89dc;
+}
+
+
+/* Underline */
+
+.bar {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.bar:before, .bar:after {
+	content: '';
+	height: 2px; 
+	width: 0;
+	bottom: 1px; 
+	position: absolute;
+	background: #4a89dc; 
+	transition: all 0.2s ease;
+}
+
+.bar:before { left: 50%; }
+
+.bar:after { right: 50%; }
+
+
+/* active */
+
+.input:focus ~ .bar:before, .input:focus ~ .bar:after { width: 50%; }
+
+
+/* Highlight */
+
+.highlight {
+	position: absolute;
+	height: 60%; 
+	width: 100px; 
+	top: 25%; 
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+
+/* active */
+
+.input:focus ~ .highlight {
+	animation: inputHighlighter 0.3s ease;
+}
+
+
+
+@media  screen and (max-width: 767px) and (min-width: 576px){
+  #myModal{margin-left:20%;
+            margin-right:20%;}
+
+  #forgot-password{margin-left:20%;
+            margin-right:20%;}
+} 
+
+
+@media screen and (min-width: 768px) {
+	
+	#myModal .modal-dialog  {width:500px;}
+  
+  #forgot-password .modal-dialog{width:500px;}
+  
+  .modal-body{padding-left:50px;
+              padding-right:50px;}
+}
+
+
+.modal-body{
+	background-image:url('/assets/images/modal_bg.jpg');
+	background-size:cover;
+	z-index: 4;
+}
+
+em{display:none;}
+
+
+
+	
+
+
+/*************************/
+/*     End Login/Signup Modals     */
+/*************************/
+
+
+@media (min-width: 1200px){
+    .navbar-custom.top-nav-collapse {
+        padding: 1rem 5rem 1rem 5rem;
+    }
+    
+    }
+	
+	
+
+	

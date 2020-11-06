@@ -1,0 +1,37 @@
+/*************************/
+/*    Footer    */
+/*************************/
+
+footer {
+	background: #2482e6;
+    padding: 30px;
+    background-image: url('/assets/images/element-1.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: -30px;
+    background-position-y: 40px;
+}
+.footer_logo img {
+    width: 60%;
+}
+.footer_logo p {
+	color: #fff;
+	margin-bottom: 0;
+	font-size: 16px;
+}
+.footer_links  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links ul {
+	display: flex;
+	margin: 0;
+}
+.links li {
+	list-style-type: none;
+	margin: 0 7px;
+}
+/*************************/
+/*    End Footer     */
+/*************************/

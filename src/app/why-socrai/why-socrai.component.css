@@ -1,0 +1,105 @@
+.testimonials {
+	margin-bottom: 3rem;
+}
+#carouselExampleFade {
+	background: #1975d8;
+    padding: 4rem 6rem;
+    border-radius: 30px;
+    background-image: url('/assets/images/element-1.png');
+    background-repeat: no-repeat;
+    background-position-x: 102%;
+    background-position-y: 16px;
+}
+.carousel-item h2 {
+	font-weight: 400;
+	text-align: center;
+	color: #fff;
+}
+.carousel-item h2:after {
+	content: '';
+    border: 1px solid #fff;
+    width: 6%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.carousel-item img {
+	width: 150px;
+}
+.img_sec {
+	display: flex;
+	align-items: center;
+}
+.img_title , .img_sec {
+	margin-left: 1.5rem;
+}
+.img_title p {
+    font-size: 25px;
+}
+.img_title .fa-linkedin-square:before {
+	font-size: 25px;
+}
+.img_title i {
+	display: flex;
+	align-items: center;
+}
+.img_title span {
+	font-size: 14px;
+    margin-left: 5px;
+}
+.carousel-item p , .carousel-item span , .carousel-item i {
+	color: #fff;
+}
+.slider_mrgin {
+	margin-top: 4rem;
+}
+.right_text {
+	font-size: 18px;
+    font-weight: 300;
+}
+.arrows {
+	display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.arrows .carousel-control-prev, .carousel-control-next {
+	position: initial;
+	width: auto;
+}
+.arrows .carousel-control-prev-icon {
+    background-image: url('/assets/images/Frame.png');
+    background-size: contain;     
+}
+.arrows .carousel-control-next-icon {
+    background-image: url('/assets/images/Vector.png');
+    background-size: contain;
+}
+.arrows i {
+	color: #1975d8;
+	margin: 0 5px;
+}
+.arrows i:nth-child(3){
+	margin-right:  6rem;
+}
+.arrows i:nth-child(1){
+	margin-left:  6rem;
+}
+.start_text i {
+	color: #2a8bf2;
+	font-size: 13px;
+}
+.start_text p {
+	font-size: 16px;
+}
+.text_sec {
+	margin-bottom: 3rem;	
+}
+.main_heading p {
+	font-size: 17px;
+	text-transform: capitalize;
+}
+/*************************/
+/*    End Slider     */
+/*************************/

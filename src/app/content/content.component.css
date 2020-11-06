@@ -1,0 +1,123 @@
+services {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+.main_title h3 {
+	text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+.serv_img {
+	position: relative;
+}
+.how_img {
+	position: absolute;
+    top: 0px;
+    width: 35%;
+    left: 84px;
+}
+.where_img {
+	position: absolute;
+    top: 154px;
+    width: 36.5%;
+    left: 1px;
+}
+.who_img {
+    position: absolute;
+    top: 312px;
+    width: 36.5%;
+    left: 63px;
+}
+.why_img {
+    position: absolute;
+    top: 0px;
+    width: 36.5%;
+    right: 66px;
+}
+.what_img {
+	position: absolute;
+    top: 154px;
+    width: 36.5%;
+    right: -1px;
+}
+.when_img {
+	position: absolute;
+    top: 312px;
+    width: 36.5%;
+    right: 61px;
+}
+
+
+.why_scorai {
+    background-image: url('/assets/images/socrai_bg.png');
+    margin-bottom: 3rem;
+    background-position-y: bottom;
+    background-size: cover;
+    padding-bottom: 12rem;
+}
+.text_section {
+	padding-top: 7rem;
+}
+.imgs_angles {
+    margin-top: 2rem;
+    position: relative;
+}
+.imgs_angles img {
+	width: 60%;
+}
+#second_img {
+	position: absolute;
+    top: 147px;
+    left: 140px;
+}
+.text_section h3 , .robot_text h3 , .mobile_txt h3 {
+	font-size: 24px;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+.text_section i {
+    font-size: 10px;
+    color: #2a8bf2;
+}
+.second_angles {
+    margin-top: 11rem;
+}
+
+/*************************/
+/*     End Services      */
+/*************************/
+
+
+
+
+
+.install {
+	background-image: url('/assets/images/install_bg.png');
+	background-attachment: fixed;
+    background-size: cover;
+    padding: 50px; 
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.install_data h4 , .install_data h5 {
+	color: #fff;
+}
+.install_data h4  {
+	font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    /*text-transform: uppercase;*/
+}
+.install_data h5 {
+    font-size: 23px;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.install_imgs img {
+	width: 40%;
+}
+/*************************/
+/*    End install Socrai     */
+/*************************/

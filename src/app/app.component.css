@@ -1,0 +1,72 @@
+body, p {
+	color: #626262; 
+	font: 400 0.875rem/1.375rem "Lato", sans-serif;
+}
+
+.p-large {
+	font: 400 1rem/1.5rem "Lato", sans-serif;
+}
+
+.p-small {
+	font: 400 0.75rem/1.25rem "Lato", sans-serif;
+}
+ 
+.p-heading {
+	margin-bottom: 3.875rem;
+}
+
+.li-space-lg li {
+	margin-bottom: 0.25rem;
+}
+
+.indent {
+	padding-left: 1.25rem;
+}
+
+h1 {
+	color: #000;
+	font: 700 3rem/3.5rem "Lato", sans-serif;
+}
+
+h2 {
+	color: #000;
+	font: 700 2.25rem/2.75rem "Lato", sans-serif;
+}
+
+h3 {
+	color: #000;
+	font: 700 1.75rem/2rem "Lato", sans-serif;
+}
+
+h4 {
+	color: #000;
+	font: 700 1.375rem/1.875rem "Lato", sans-serif;
+}
+
+h5 {
+	color: #000;
+	font: 700 1.125rem/1.625rem "Lato", sans-serif;
+}
+
+h6 {
+	color: #000;
+	font: 700 1rem/1.5rem "Lato", sans-serif;
+}
+
+a {
+	color: #626262;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #626262;
+	text-decoration: underline;
+}
+
+a.turquoise {
+	color: #00bfd8;
+}
+
+a.white {
+	color: #fff;
+}
